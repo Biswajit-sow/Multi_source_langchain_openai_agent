@@ -1,6 +1,5 @@
 # Multi_source_langchain_openai_agent
 
-# Multi-Source Langchain OpenAI Agent
 
 This project demonstrates a Langchain agent capable of answering questions based on information retrieved from multiple sources: Wikipedia, web pages (specifically the Langsmith documentation), and arXiv. It leverages OpenAI's `gpt-3.5-turbo-0125` model for LLM tasks, `OllamaEmbeddings` for embeddings, and FAISS for efficient vector storage and similarity search.
 
@@ -30,14 +29,9 @@ This project showcases how to build a powerful and versatile Langchain agent tha
 
 ## Installation
 
-1.  **Clone the repository:**
 
-    ```bash
-    git clone <repository_url>
-    cd <repository_directory>
-    ```
 
-2.  **Install dependencies using Poetry (Recommended):**
+1.  **Install dependencies using Poetry (Recommended):**
 
     ```bash
     poetry install
@@ -49,7 +43,7 @@ This project showcases how to build a powerful and versatile Langchain agent tha
     pip install -r requirements.txt
     ```
 
-3.  **Set up your environment variables:**
+2.  **Set up your environment variables:**
 
     Create a `.env` file in the project root with the following content:
 
@@ -79,10 +73,10 @@ This project showcases how to build a powerful and versatile Langchain agent tha
 
 ## Code Structure
 
-*   `main.py`: Main script to run the agent, sets up the data loading, embedding, vector database, and Langchain agent.
-*   `utils.py` (Example - create as needed):  Helper functions for data loading, text splitting, etc. (If you have these).
+*   `OPEMAI_agent.ipynb`: Main script to run the agent, sets up the data loading, embedding, vector database, and Langchain agent.
+
 *   `requirements.txt`: Python dependencies (if using pip).
-*   `poetry.toml`: Poetry configuration file (if using Poetry).
+
 *   `.env`: Environment variables (API keys).
 
 ## Implementation Details
