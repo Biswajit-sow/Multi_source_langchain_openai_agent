@@ -15,7 +15,7 @@ This project showcases how to build a powerful and versatile Langchain agent tha
 
 ## Features
 
-*   **Multi-Source Data Retrieval:**  Retrieves relevant information from Wikipedia, web pages, and arXiv based on user queries.
+*   **Multi-Source Data Retrieval:**  Retrieves relevant information from Wikipedia, web pages-here use langsmith websearch , and arXiv based on user queries.
 *   **Context-Aware Question Answering:** Answers questions based on the combined knowledge from the retrieved sources.
 *   **Vector Database Search:** Uses FAISS to efficiently find the most relevant documents based on semantic similarity.
 *   **Customizable:**  The agent can be easily extended to include additional data sources or different LLMs/embedding models.
@@ -94,7 +94,8 @@ This project showcases how to build a powerful and versatile Langchain agent tha
 
 4.  **Vector Database (FAISS):**
     *   FAISS (Facebook AI Similarity Search) is used to store the embeddings and perform efficient similarity search.  The `FAISS.from_documents` method is used to create the index directly from the loaded documents and embeddings.
-
+5.  **OR Vector Database (Chroma):**
+    *   Chroma ( a lightweight vector database for building applications powered by similarity searches of vector embedding space) is used to store the embeddings and perform efficient similarity search.  The `chroma.from_documents` method is used to create the index directly from the loaded documents and embeddings.
 5.  **Langchain Agent:**
     *   A Langchain agent is created using `OpenAI` and the `gpt-3.5-turbo-0125` model.  This agent is configured to use the FAISS vector database as a tool for retrieving relevant information.
     *   The agent takes a user's question as input, retrieves relevant documents from the vector database, and then uses the LLM to generate an answer based on the retrieved information.
